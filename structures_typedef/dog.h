@@ -1,10 +1,10 @@
 #ifndef DOG_H
 #define DOG_H
 /**
- * struct dog: defines a new type of structure
- * @name: dogs name
- * @age: dogs age
- * @owner: pointer to owners name
+ * struct dog - defines a new type of structure
+ * @name: pointer to dogs name
+ * @age: dogs age (float)
+ * @owner: pointer to owners name (string)
  */
 typedef struct dog
 {
