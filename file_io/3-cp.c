@@ -1,7 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 #include <fcntl.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 #define BUFFER_SIZE 1024
 
@@ -10,7 +10,12 @@
  * @argc: number of arguments
  * @argv: argument vector
  *
- * Return: 0 on success, exits with code on error
+ * Return: 0 on success
+ * Description: Exits with code on error:
+ *   97 -> incorrect argument count
+ *   98 -> cannot read from file_from
+ *   99 -> cannot write to file_to
+ *   100 -> cannot close file descriptor
  */
 int main(int argc, char *argv[])
 {
